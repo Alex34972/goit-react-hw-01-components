@@ -40,7 +40,7 @@
   border: 1px solid rgb(211, 216, 226);
   box-sizing: content-box;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 4px -1px 19px -8px rgba(34, 60, 80, 0.22);
+  box-shadow: 7px 15px 15px -12px rgba(34, 60, 80, 0.22);
 }
 
 li {
