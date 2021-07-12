@@ -1,18 +1,19 @@
 .container {
   width: 400px;
-  height: 400px;
-  background-color: rgb(235, 235, 235);
-  border: 1px solid rgb(235, 235, 235);
+  height: 480px;
+  background-color: rgb(208, 217, 226);
+  border: 1px solid rgb(208, 217, 226);
   box-sizing: content-box;
 }
 .profile {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 250px;
+  width: 240px;
   height: 280px;
   background-color: snow;
+  border-radius: 4px 4px 0px 0px;
 }
 .avatar {
   margin-top: 20px;
@@ -20,26 +21,43 @@
   border-radius: 50%;
 }
 .name {
-  font-size: large;
+  font-size: larger;
   font-weight: 500;
+}
+.tag,
+.location {
+  color: rgb(150, 159, 177);
 }
 .stats {
   display: flex;
-  width: 250px;
-  height: 60px;
+  width: 240px;
+  height: 70px;
   margin: 0px;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid tomato;
+}
+li {
+  width: 80px;
+  background-color: rgb(230, 233, 238);
+  border: 1px solid rgb(211, 216, 226);
 }
 .label {
-  margin-top: 10px;
+  display: flex;
+
+  margin-top: 15px;
   margin-bottom: 5px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: space-around;
+  font-size: small;
+  color: rgb(150, 159, 177);
 }
 
 .quantity {
   display: flex;
   justify-content: center;
+  font-weight: 500;
+  font-size: large;
 }
