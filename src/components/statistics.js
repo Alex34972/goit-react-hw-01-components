@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-export default function Statistics({title, stats} ) {
+export default function Statistics({ title, stats }) {
   return (
     <section class="statistics">
       {title && <h2 class="title">{title}</h2>}
@@ -17,5 +17,5 @@ export default function Statistics({title, stats} ) {
 }
 Statistics.propTypes = {
   label: propTypes.string.isRequired,
-  percentage: propTypes.number.isRequired
+  percentage: propTypes.number.isRequired,
 };
