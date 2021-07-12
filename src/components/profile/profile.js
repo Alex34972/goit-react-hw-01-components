@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import s from './profile.module.css';
-
+import defoltImage from '../image/hour.png';
 export default function Profile(props) {
   const { avatar, name, tag, location, followers, views, likes } = props;
   return (
@@ -34,6 +34,9 @@ export default function Profile(props) {
     </div>
   );
 }
+Profile.defaultProps = {
+  avatar: defoltImage,
+};
 Profile.propTypes = {
   avatar: propTypes.string,
   name: propTypes.string.isRequired,
