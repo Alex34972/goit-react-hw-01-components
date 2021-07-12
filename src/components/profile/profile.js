@@ -1,6 +1,6 @@
 import propTypes from 'prop-types';
 import s from './profile.module.css';
-console.log(s);
+
 export default function Profile(props) {
   const { avatar, name, tag, location, followers, views, likes } = props;
   return (
@@ -13,8 +13,8 @@ export default function Profile(props) {
           width="90"
         />
         <p className={s.name}>{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
 
       <ul className={s.stats}>
