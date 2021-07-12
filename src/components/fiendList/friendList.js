@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import s from './friends.module.css';
+
 export default function FriendList(props) {
   const { friends } = props;
   return (
@@ -14,6 +15,7 @@ export default function FriendList(props) {
     </ul>
   );
 }
+
 FriendList.propTypes = {
   isOnline: propTypes.bool.isRequired,
   avatar: propTypes.string.isRequired,
