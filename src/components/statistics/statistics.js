@@ -16,6 +16,7 @@ export default function Statistics({ title, stats }) {
     </section>
   );
 }
+
 Statistics.propTypes = {
   label: propTypes.string,
   percentage: propTypes.number.isRequired,
