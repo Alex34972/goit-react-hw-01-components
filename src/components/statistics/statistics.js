@@ -5,7 +5,7 @@ export default function Statistics({ title, stats }) {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
 
-      <ul className={s.statlist}>
+      <ul className={s.statList}>
         {stats.map(stat => (
           <li class={s.item} key={stat.id}>
             <span className={s.label}>{stat.label}</span>
