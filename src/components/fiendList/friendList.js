@@ -3,7 +3,7 @@ import s from './friends.module.css';
 
 export default function FriendList({ friends }) {
   return (
-    <ul class={s.friendList}>
+    <ul className={s.friendList}>
       {friends.map(friend => (
         <li className={s.item} key={friend.id}>
           <span className={s[friend.isOnline]}>{friend.isOnline}</span>
