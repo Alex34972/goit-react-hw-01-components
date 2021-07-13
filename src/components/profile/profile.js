@@ -14,7 +14,7 @@ export default function Profile(props) {
           width="90"
         />
         <p className={s.name}>{name}</p>
-        <p className={s.tag}>@{tag}</p>
+        <p className={s.tag}>@ {tag}</p>
         <p className={s.location}>{location}</p>
       </div>
 
