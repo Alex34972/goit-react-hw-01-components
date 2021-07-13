@@ -1,8 +1,7 @@
 import propTypes from 'prop-types';
 import s from './friends.module.css';
 
-export default function FriendList(props) {
-  const { friends } = props;
+export default function FriendList(friends) {
   return (
     <ul class={s.friendList}>
       {friends.map(friend => (
