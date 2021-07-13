@@ -1,8 +1,9 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import StatisticsProfile from './statisticsProfile';
 import s from './profile.module.css';
 import defoltImage from '../image/hour.png';
 export default function Profile(props) {
-  const { avatar, name, tag, location, followers, views, likes } = props;
+  const { avatar, name, tag, location, stats } = props;
   return (
     <div className={s.container}>
       <div className={s.profile}>
@@ -17,20 +18,7 @@ export default function Profile(props) {
         <p className={s.location}>{location}</p>
       </div>
 
-      <ul className={s.stats}>
-        <li>
-          <span className={s.label}>Followers</span>
-          <span className={s.quantity}>{followers}</span>
-        </li>
-        <li>
-          <span className={s.label}>Views</span>
-          <span className={s.quantity}>{views}</span>
-        </li>
-        <li>
-          <span className={s.label}>Likes</span>
-          <span className={s.quantity}>{likes}</span>
-        </li>
-      </ul>
+      <StatisticsProfile {...stats} />
     </div>
   );
 }
@@ -38,11 +26,13 @@ Profile.defaultProps = {
   avatar: defoltImage,
 };
 Profile.propTypes = {
-  avatar: propTypes.string.isRequired,
-  name: propTypes.string.isRequired,
-  tag: propTypes.string.isRequired,
-  location: propTypes.string.isRequired,
-  followers: propTypes.number.isRequired,
-  views: propTypes.number.isRequired,
-  likes: propTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
