@@ -7,7 +7,7 @@ export default function Statistics({ title, stats }) {
 
       <ul className={s.statList}>
         {stats.map(stat => (
-          <li class={s.item} key={stat.id}>
+          <li className={s.item} key={stat.id}>
             <span className={s.label}>{stat.label}</span>
             <span className={s.percentage}>{stat.percentage}%</span>
           </li>
