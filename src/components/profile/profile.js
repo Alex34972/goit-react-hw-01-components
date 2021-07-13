@@ -38,7 +38,7 @@ Profile.defaultProps = {
   avatar: defoltImage,
 };
 Profile.propTypes = {
-  avatar: propTypes.string,
+  avatar: propTypes.string.isRequired,
   name: propTypes.string.isRequired,
   tag: propTypes.string.isRequired,
   location: propTypes.string.isRequired,
