@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import StatisticsProfile from './statisticsProfile';
 import s from './profile.module.css';
-import defoltImage from '../image/hour.png';
+import defoltImage from '../../image/hour.png';
 export default function Profile(props) {
   const { avatar, name, tag, location, stats } = props;
   return (
