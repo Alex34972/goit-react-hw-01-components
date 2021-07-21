@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './friends.module.css';
-import defoltImage from '../image/hour.png';
+import defoltImage from '../../image/hour.png';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
